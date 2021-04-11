@@ -103,14 +103,14 @@ a{
 }
 
 .ico:hover{
-  filter: brightness(90%);
+  filter: brightness(80%);
   box-shadow: 1px -1px 13px -4px #000;
   transition: .15s ease-in-out;
   transform: scale(1.10);
 }
 
 .ico:active{
-  filter: brightness(80%);
+  filter: brightness(60%);
   transition: .15s ease-in-out;
   -webkit-transform: scale(.90);
   -ms-transform: scale(.90);
