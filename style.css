@@ -61,7 +61,7 @@ body > .container{
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;  
   overflow-scrolling: touch;
-  background: linear-gradient(31deg, rgba(93,18,0,1) 0%, rgba(162,48,31,1) 29%, rgba(142,68,134,1) 54%, rgba(3,179,210,1) 78%, rgba(30,84,92,1) 100%);
+   background: linear-gradient(31deg, rgba(93,18,0,1) 0%, rgba(162,48,31,1) 29%, rgba(142,68,134,1) 54%, rgba(3,179,210,1) 78%, rgba(30,84,92,1) 100%);
 }
 
 section{
@@ -97,23 +97,24 @@ a{
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
-  padding: 10px;
   background: rgb(255, 255, 255, .4);
-  box-shadow: 1px -1px 13px -6px #000;
+  padding: 10px;
   border-radius: 13px;
 }
 
 .ico:hover{
-    filter: brightness(50%);
-    transition: .15s ease-in-out;
+  filter: brightness(90%);
+  box-shadow: 1px -1px 13px -4px #000;
+  transition: .15s ease-in-out;
+  transform: scale(1.10);
 }
 
 .ico:active{
   filter: brightness(80%);
   transition: .15s ease-in-out;
-     -webkit-transform: scale(.90);
-    -ms-transform: scale(.90);
-    transform: scale(.90);
+  -webkit-transform: scale(.90);
+  -ms-transform: scale(.90);
+  transform: scale(.90);
 }
 
 h1{
