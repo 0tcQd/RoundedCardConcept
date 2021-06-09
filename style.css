@@ -1,8 +1,12 @@
 body{
   background: #242424;
-  font-family: "Neo Sans";
-  position: fixed;
+  background: linear-gradient(31deg, rgba(93,18,0,1) 0%, rgba(162,48,31,1) 29%, rgba(142,68,134,1) 54%, rgba(3,179,210,1) 78%, rgba(30,84,92,1) 100%);
+  background-size: cover;
+  font-family: 'Neo Sans';
+  background-repeat: no-repeat;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -10,7 +14,7 @@ body{
 @font-face {
   font-family: "Neo Sans";
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   src: url('font.woff2');
 }
 
@@ -37,7 +41,6 @@ body{
 .fa-twitter:before {
 	content: "\f099";
 }
-
 .fab {
 	font-family: 'Font Awesome 5 Brands';
 	font-weight: 400;
@@ -49,20 +52,13 @@ body{
 	text-rendering: auto;
 	line-height: 1;
 }
-
-body > .container{
+#movable{
   text-align: center;
-  overscroll-behavior: none;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;  
-  overflow-scrolling: touch;
-  background: linear-gradient(31deg, rgba(93,18,0,1) 0%, rgba(162,48,31,1) 29%, rgba(142,68,134,1) 54%, rgba(3,179,210,1) 78%, rgba(30,84,92,1) 100%);
-}
-
-section{
-  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   margin: 0;
   border-radius: 13px;
   background: rgb(255, 255, 255, .8);
   box-shadow: 2px 2px 11px 1px rgb(0 0 0 / 58%);
@@ -72,10 +68,6 @@ section{
   max-width: 600px;
   position: absolute;
   perspective: 300px;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 img{
@@ -93,7 +85,7 @@ a{
   font-size: 25px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   background: rgb(255, 255, 255, .4);
   padding: 10px;
   border-radius: 13px;
@@ -127,9 +119,9 @@ h1{
 }
 
 p{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-family: 'Neo Sans';
+  font-size: 18px;
+  font-weight: 350;
   color: rgb(0, 0, 0, .75);
 }
 
@@ -140,7 +132,7 @@ p{
   h1, p{
     color: rgb(255, 255, 255, 0.85);
   }
-  section{
-    background: rgb(28, 28, 30, .7)
+  #movable{
+    background: rgb(28, 28, 30, .8)
   }
 }
